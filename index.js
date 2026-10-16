@@ -22,7 +22,7 @@ const connection = mysql.createConnection({
   host: process.env.DB_HOST || "localhost",
   user: process.env.DB_USER || "root",
   database: process.env.DB_NAME || "DBMS_Project",
-  password: process.env.DB_PASSWORD || "pass123",
+  password: process.env.DB_PASSWORD || "",
 });
 
 
