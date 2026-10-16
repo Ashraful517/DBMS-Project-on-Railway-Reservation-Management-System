@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Ticket</title>
+    <link rel="stylesheet" href="/css/book_ticket.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Book Your Ticket</h1>
+
+        <!-- Show success or error messages -->
+        <% if (successMessage) { %>
+            <div class="alert success"><%= successMessage %></div>
+        <% } %>
+        <% if (errorMessage) { %>
+            <div class="alert error"><%= errorMessage %></div>
+        <% } %>
+
+        <!-- Ticket Booking Form -->
+        <form action="/book_ticket" method="post">
+            <label for="train_route_id">Train Route ID:</label>
+            <input type="number" id="train_route_id" name="train_route_id" required>
+
+            <label for="seat_type">Seat Type:</label>
+            <select id="seat_type" name="seat_type" required>
+                <option value="Cabin">Cabin</option>
+                <option value="Business">Business</option>
+                <option value="Economy">Economy</option>
+                <option value="First Class">First Class</option>
+            </select>
+            
+            <label for="seat_no">Seat Number:</label>
+            <input type="number" id="seat_no" name="seat_no" required>
+
+            <label for="price">Price (in BDT):</label>
+            <input type="number" id="price" name="price" required>
+
+            <button type="submit">Book Ticket</button>
+        </form>
+    </div>
+</body>
+</html>

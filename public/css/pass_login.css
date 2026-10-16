@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    background-color: #f9f9f9; /* Optional background color */
+}
+
+.entire form{
+    border: 3px solid black;
+    width: 25rem;
+    height: 25rem;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Add shadow */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+img{
+    width: 10rem;
+    height: auto;
+}
+button{
+    margin-top: 10px;
+    background-color: green;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    height: 2rem;
+    width: 8rem;
+    cursor: pointer;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

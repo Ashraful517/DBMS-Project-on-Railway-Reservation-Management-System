@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passenger List</title>
+    <link rel="stylesheet" href="/css/pass_list.css"> <!-- Optional, for styling -->
+</head>
+<body>
+
+    <h1>Passenger List</h1>
+    
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Passenger ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Gender</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% passengers.forEach(function(passenger) { %>
+                <tr>
+                    <td><%= passenger.passenger_id %></td>
+                    <td><%= passenger.name %></td>
+                    <td><%= passenger.email %></td>
+                    <td><%= passenger.phone %></td>
+                    <td><%= passenger.gender %></td>
+                    <td><%= passenger.age %></td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+
+    <button onclick="window.location.href='/Admin_dash.html'">Back to Dashboard</button>
+
+</body>
+</html>

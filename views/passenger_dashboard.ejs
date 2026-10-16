@@ -1,0 +1,66 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passenger Dashboard</title>
+    <link rel="stylesheet" href="/css/passenger_dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>Welcome, <%= passengerName %>!</h1>
+        </header>
+        <section>
+            <h2>Your Options</h2>
+            <ul class="dashboard-links">
+                <li><a href="/view_bookings">View Your Bookings</a></li>
+                <li><a href="/book_ticket">Book a Ticket</a></li>
+                <li><a href="/cancel_booking">Cancel a Booking</a></li>
+                <li><a href="/update_profile">Update Profile</a></li>
+            </ul>
+        </section>
+        <footer>
+            <p>Thank you for using Bangladesh Railway!</p>
+        </footer>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passenger Dashboard</title>
+    <link rel="stylesheet" href="/css/passenger_dashboard.css">
+</head>
+<body>
+    <div class="header">
+        <img src="/view/bdrailway.png" alt="Logo" class="logo">
+        <h1>Welcome, <%= passengerName %>!</h1>
+    </div>
+    <div class="dashboard-container">
+        <div class="card">
+            <h3>Book Ticket</h3>
+            <a href="/book_ticket">Go</a>
+        </div>
+        <div class="card">
+            <h3>View Tickets</h3>
+            <a href="/viewticket.html">View Tickets</a>
+        </div>
+        <div class="card">
+            <h3>Cancel Booking</h3>
+            <a href="/cancel_booking">Go</a>
+        </div>
+        <div class="card">
+            <h3>Search Train</h3>
+            <a href="/search_form">Go</a>
+        </div>
+        <div class="card">
+            <h3>Seats</h3>
+            <a href="/search_train">Go</a>
+        </div>
+    </div>
+</body>
+</html>

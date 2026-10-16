@@ -1,0 +1,77 @@
+body{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    background-color: #f9f9f9; /* Optional background color */
+}
+
+.header{
+    
+    position: relative; /* Allows positioning elements inside */
+    background-color: gray; /* Gray background */
+    height: 100px; /* Adjust height as needed */
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    color: white; /* Text color */
+    font-size: 24px; /* Text size */
+    font-family: Arial, sans-serif; /* Optional font style */
+    
+    
+}
+.header img {
+    position: absolute; /* Position relative to the .header div */
+    top: 10px; /* Space from the top edge */
+    left: 10px; /* Space from the left edge */
+    width: 50px; /* Adjust image size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.function{
+   
+    display: inline;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    
+}
+.pic1{
+    display: flex; 
+    top: 20rem;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.pic1 img{
+    width: 30rem;
+    height: auto;
+}
+
+.function button {
+    padding: 10px 10px;
+    margin: 0 5px; /* Space between buttons */
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Alternating button colors */
+.function button:nth-child(odd) {
+    background-color: #555b5f; /* Blue for odd buttons */
+}
+
+.function button:nth-child(even) {
+    background-color: #ffff; /* Red for even buttons */
+    color: black;
+}
+

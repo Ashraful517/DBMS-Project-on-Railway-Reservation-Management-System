@@ -1,0 +1,34 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    background-image: url('/view/railway.jpg'); /* Replace with your image path */
+    background-size: cover; /* Make the image cover the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.deleteTrain form{
+
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    width: 20rem;
+    height: 15rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+button{
+    margin-top: 10px;
+    cursor: pointer;
+    width: 8rem;
+    height: 2rem;
+}

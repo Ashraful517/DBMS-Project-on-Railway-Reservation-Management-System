@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Seat Price</title>
+    <link rel="stylesheet" href="/css/updateticketprice.css">
+</head>
+<body>
+    <div class="update_seat_price">
+        <form action="/update-seat-price" method="post">
+            <h3>Update Seat Price</h3>
+            <label for="train_id">Train ID:</label>
+            <input id="train_id" name="train_id" type="number" placeholder="Enter Train ID" required>
+            <br>
+            <label for="seat_type">Seat Type:</label>
+            <select id="seat_type" name="seat_type" required>
+                <option value="Cabin">Cabin</option>
+                <option value="Business">Business</option>
+                <option value="Economy">Economy</option>
+                <option value="First Class">First Class</option>
+            </select>
+            <br>
+            <label for="price">New Price:</label>
+            <input id="price" name="price" type="number" step="0.01" placeholder="Enter New Price" required>
+            <br>
+            <button type="submit">Update Price</button>
+        </form>
+    </div>
+</body>
+</html>

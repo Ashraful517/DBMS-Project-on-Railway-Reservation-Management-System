@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/css/Admin_dash.css">
+    <script>
+        function addTrain() {
+            window.location.href = "/Add_Train.html";
+        }
+        function editTrain() {
+            window.location.href = "/editTrain.html";
+        }
+        function DeleteTrain() {
+            window.location.href = "/deleteTrain.html";
+        }
+        function AddRoute() {
+            window.location.href = "/AddRoute.html";
+        }
+        function DeleteRoute() {
+            window.location.href = "/DeleteRoute.html";
+        }
+        function EnrouteTrain() {
+            window.location.href = "/EnrouteTrain.html";
+        }
+        function pass_list() {
+            window.location.href = "/passenger_list";
+        }
+        function available_seats() {
+            window.location.href = "/Available_seat.html";
+        }
+        function cancel_seats() {
+            window.location.href = "/CancelTicket.html";
+        }
+        function showTrain() {
+            window.location.href = "/showTrains";
+        }
+        function UpdateTicketPrice() {
+            window.location.href = "/UpdateTicketPrice.html";
+        }
+        function earning() {
+            window.location.href = "/admin/earnings";
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <img src="/view/bdrailway.png" alt="logo">
+        <h3>Admin</h3> 
+    </div>
+   <div class="function">
+    <button onclick="addTrain()">Add Train</button>
+    <button onclick="editTrain()">Edit Train</button>
+    <button onclick="DeleteTrain()">Delete Train</button>
+    <button onclick="EnrouteTrain()">Enroute Train</button>
+    <button onclick="AddRoute()">Add Route</button>
+    <button onclick="DeleteRoute()">Delete Route</button>
+    <button onclick="pass_list()">passenger List</button>
+    <button onclick="available_seats()">Available Seats</button>
+    <button onclick="cancel_seats()">Cancel Bookings</button>
+    <button onclick="showTrain()">show Train</button>
+    <button onclick="UpdateTicketPrice()">Update seat price</button>
+    <button onclick="earning()">Earning</button>
+   </div>
+   <div class="pic1">
+    <img src="/view/railway.jpg" alt="picture">
+   </div>
+    
+</body>
+</html>

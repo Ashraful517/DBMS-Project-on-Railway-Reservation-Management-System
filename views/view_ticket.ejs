@@ -1,0 +1,19 @@
+<h2>Your Booked Tickets</h2>
+
+<% if (bookings.length > 0) { %>
+    <h3>Your Booked Tickets</h3>
+    <% bookings.forEach(booking => { %>
+        <p><strong>Train Route:</strong> <%= booking.departure_place %> to <%= booking.arrival_place %></p>
+        <p><strong>Seat Type:</strong> <%= booking.seat_type %></p>
+        <p><strong>Seat No:</strong> <%= booking.seat_no %></p>
+        <p><strong>Price:</strong> <%= booking.price %></p>
+        <!-- Cancel Button -->
+        <form action="/cancel_booking" method="POST">
+            <input type="hidden" name="booking_id" value="<%= booking.booking_id %>">
+            <button type="submit">Cancel Booking</button>
+        </form>
+        <hr>
+    <% }) %>
+<% } else { %>
+    <p>You have no bookings yet.</p>
+<% } %>

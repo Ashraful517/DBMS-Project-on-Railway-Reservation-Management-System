@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Train</title>
+    <link rel="stylesheet" href="/css/editTrain.css">
+</head>
+<body>
+    <div class="edit">
+        <form id="editTrainForm" action="/edit" method="post">
+            <label for="train_name">Train Name:</label>
+            <input id="train_name" name="train_name" type="text" required>
+            <br>
+            <label for="train_type">Train Type:</label>
+            <input id="train_type" name="train_type" type="text" required>
+            <br>
+            <label for="total_seats">Total Seats:</label>
+            <input id="total_seats" name="total_seats" type="number" required>
+            <br>
+            <label for="cabin_seats">Cabin Seats:</label>
+            <input id="cabin_seats" name="cabin_seats" type="number" required>
+            <br>
+            <label for="business_seats">Business Seats:</label>
+            <input id="business_seats" name="business_seats" type="number" required>
+            <br>
+            <label for="economy_seats">Economy Seats:</label>
+            <input id="economy_seats" name="economy_seats" type="number" required>
+            <br>
+            <label for="first_class_seats">First Class Seats:</label>
+            <input id="first_class_seats" name="first_class_seats" type="number" required>
+            <br>
+            <label for="train_id">Train ID:</label>
+            <input id="train_id" name="train_id" type="text" required>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

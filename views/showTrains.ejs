@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Trains</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Train List</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Train ID</th>
+                <th>Train Name</th>
+                <th>Train Type</th>
+                <th>Total Seats</th>
+                <th>Cabin Seats</th>
+                <th>Business Seats</th>
+                <th>Economy Seats</th>
+                <th>First Class Seats</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Loop through the 'trains' array and display each train's details -->
+            <% trains.forEach(train => { %>
+                <tr>
+                    <td><%= train.train_id %></td>
+                    <td><%= train.train_name %></td>
+                    <td><%= train.train_type %></td>
+                    <td><%= train.total_seats %></td>
+                    <td><%= train.cabin_seats %></td>
+                    <td><%= train.business_seats %></td>
+                    <td><%= train.economy_seats %></td>
+                    <td><%= train.first_class_seats %></td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+    <button onclick="window.location.href='http://localhost:8080/admin?id=Tasbir&pass=3_password3';">Back</button>
+
+
+</body>
+</html>

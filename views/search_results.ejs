@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Trains</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Available Trains from <%= departurePlace %> to <%= arrivalPlace %> on <%= travelDate %></h2>
+        <% if (trains.length > 0) { %>
+            <div class="train-list">
+                <% trains.forEach(train => { %>
+                    <div class="train-item">
+                        <h3><%= train.train_name %></h3>
+                        <p><strong>Departure:</strong> <%= train.departure_place %></p>
+                        <p><strong>Arrival:</strong> <%= train.arrival_place %></p>
+                        <p><strong>Cabin Seats Available:</strong> <%= train.available_cabin %></p>
+                        <p><strong>Business Seats Available:</strong> <%= train.available_business %></p>
+                        <p><strong>Economy Seats Available:</strong> <%= train.available_economy %></p>
+                        <p><strong>First Class Seats Available:</strong> <%= train.available_first_class %></p>
+                    </div>
+                <% }) %>
+            </div>
+        <% } else { %>
+            <p>No trains available for the given route on the specified date.</p>
+        <% } %>
+    </div>
+</body>
+</html>

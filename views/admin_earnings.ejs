@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Earnings</title>
+    <link rel="stylesheet" href="/css/earning.css"> <!-- Add your CSS file link here -->
+</head>
+<body>
+    <h1>Admin Earnings</h1>
+
+    <form action="/admin/earnings" method="GET">
+        <label for="startDate">Start Date:</label>
+        <input type="date" name="startDate" value="<%= startDate %>">
+        
+        <label for="endDate">End Date:</label>
+        <input type="date" name="endDate" value="<%= endDate %>">
+        
+        <button type="submit">Filter by Date</button>
+    </form>
+
+    <h3>Total Earnings: $<%= earningsData.total_earnings || 0 %></h3>
+    <h4>Bookings Summary</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>Seat Type</th>
+                <th>Bookings Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cabin</td>
+                <td><%= earningsData.cabin_count || 0 %></td>
+            </tr>
+            <tr>
+                <td>Business</td>
+                <td><%= earningsData.business_count || 0 %></td>
+            </tr>
+            <tr>
+                <td>Economy</td>
+                <td><%= earningsData.economy_count || 0 %></td>
+            </tr>
+            <tr>
+                <td>First Class</td>
+                <td><%= earningsData.first_class_count || 0 %></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

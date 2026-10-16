@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Seats</title>
+    <link rel="stylesheet" href="/css/Available_seats_result.css">
+</head>
+<body>
+    <div class="available_seats">
+        <h1>Available Seats for <%= train.train_name %></h1>
+        <p><strong>Total Seats:</strong> <%= train.total_seats %></p>
+        <p><strong>Booked Seats:</strong> <%= train.total_booked_seats || 0 %></p>
+        <p><strong>Available Seats:</strong> <%= train.available_seats %></p>
+        
+        <a href="/Admin_dash.html">Back to Dashboard</a>
+    </div>
+</body>
+</html>

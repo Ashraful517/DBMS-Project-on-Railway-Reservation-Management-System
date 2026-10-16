@@ -1,0 +1,40 @@
+/* dashboard.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.ticket-details {
+    width: 60%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-details h1 {
+    text-align: center;
+}
+
+.ticket-details table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.ticket-details table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ticket-details table td strong {
+    color: #333;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}

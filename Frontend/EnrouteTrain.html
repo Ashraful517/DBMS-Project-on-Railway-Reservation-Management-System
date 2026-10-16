@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroute Train</title>
+    <link rel="stylesheet" href="/css/enroute.css">
+</head>
+<body>
+    <div class="enroute_train">
+        <form action="http://localhost:8080/enroute" method="post">
+            <label for="train_id">Train ID:</label>
+            <input id="train_id" name="train_id" placeholder="Train ID" type="text" required><br>
+            <label for="route_id">Route ID:</label>
+            <input id="route_id" name="route_id" placeholder="Route ID" type="text" required><br>
+            <label for="departure_time">Departure Time:</label>
+            <input id="departure_time" name="departure_time" placeholder="HH:MM:SS" type="text" required><br>
+            <label for="arrival_time">Arrival Time:</label>
+            <input id="arrival_time" name="arrival_time" placeholder="HH:MM:SS" type="text" required><br>
+            <label for="route_name">Route Name:</label>
+            <input id="route_name" name="route_name" placeholder="Route name" type="text" required><br>
+           
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

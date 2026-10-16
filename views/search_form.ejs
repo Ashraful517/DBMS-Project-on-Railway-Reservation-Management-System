@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Search</title>
+</head>
+<body>
+    <h1>Search for Trains</h1>
+    <form action="/search_trains" method="get">
+        <label for="departurePlace">Departure Place:</label>
+        <input type="text" id="departurePlace" name="departurePlace" required>
+
+        <label for="arrivalPlace">Arrival Place:</label>
+        <input type="text" id="arrivalPlace" name="arrivalPlace" required>
+
+        <label for="travelDate">Travel Date:</label>
+        <input type="date" id="travelDate" name="travelDate" required>
+
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>

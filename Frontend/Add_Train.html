@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Train</title>
+    <link rel="stylesheet" href="/css/Add_Train.css">
+    <script> // Check for the success parameter in the URL 
+        window.onload = function() { const urlParams = new URLSearchParams(window.location.search); if (urlParams.has('success')) { alert('Train Added Successfully!!!'); } }; </script>
+</head>
+<body>
+    <!-- (train_name, train_type, total_seats, cabin_seats, business_seats, economy_seats, first_class_seats) -->
+     <div class="info_train">
+        <form id="addtrain" action="/addtrain" method="get">
+            <label for="train_name">Train Name :</label>
+            <input id="train_name" name="name" placeholder="train name" type="text"><br>
+            <label for="train_type">Train Type :</label>
+            <input id="train_ty pe" name="type" placeholder="train type" type="text"><br>
+            <label for="total_seats">Total Seats :</label>
+            <input id="total_seats" name="total_seats" placeholder="total_seats" type="text"><br>
+            <label for="cabin_seats">Cabin Seats :</label>
+            <input id="cabin_seats" name="cabin_seats" placeholder="cabin_seats" type="text"><br>
+            <label for="business_seats">Business Seats :</label>
+            <input id="business_seats" name="business_seats" placeholder="business_seats" type="text"><br>
+            <label for="economy">Economy Seats :</label>
+            <input id="economy" name="economy_seats" placeholder="economy seats" type="text"><br>
+            <label for="fc_seats">FC seats :</label>
+            <input id="fc_seats" name="fc_seats" placeholder="fc_seats" type="text"><br>
+    
+            <button type="submit">submit</button>
+
+        </form>
+
+     </div>
+</body>
+</html>
