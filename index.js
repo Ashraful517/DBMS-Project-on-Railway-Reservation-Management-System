@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const express = require("express");
 const app = express();
 const bodyParser = require('body-parser');
@@ -17,10 +19,10 @@ app.use(bodyParser.json());
 
 const mysql = require("mysql2");
 const connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  database: "DBMS_Project",
-  password: "pass123",
+  host: process.env.DB_HOST || "localhost",
+  user: process.env.DB_USER || "root",
+  database: process.env.DB_NAME || "DBMS_Project",
+  password: process.env.DB_PASSWORD || "pass123",
 });
 
 
@@ -767,4 +769,3 @@ app.listen(port,()=>{
     console.log("server online")
 }) 
   
-
